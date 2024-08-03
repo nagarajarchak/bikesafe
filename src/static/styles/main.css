@@ -1,0 +1,28 @@
+body {
+    margin: 20px 50px;
+    font-family: "Comfortaa", sans-serif;
+}
+
+/* HEADER */
+
+.header {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    height: 200px;
+    /* display: flex;              */
+    align-items: center;        
+    /* justify-content: space-between;  */
+    font-weight: 700;
+}
+
+.header h1 {
+    margin: 0;                  
+    padding-right: 10px;    
+    padding-bottom: 20px;   
+}
+
+.header a {
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,5 +1,5 @@
 import logging
-from flask import Flask, request, render_template
+from flask import Flask, render_template
 
 app = Flask(__name__)
 logging.basicConfig(level = logging.INFO)
@@ -12,3 +12,6 @@ def index():
     """
 
     return render_template('index.html', error = False)
+
+if __name__ == '__main__':
+    app.run(debug = True)
