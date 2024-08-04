@@ -44,5 +44,18 @@ body {
 /* LANDING PAGE */
 
 .landing-page {
+    margin: 0;
+}
+
+.description {
     padding-left: 50px;
+}
+
+.landing-page .banner {
+    width: 100%;
+}
+
+.landing-page .banner .col .header-img {
+    width: 100%;
+    text-align: center;
 }
