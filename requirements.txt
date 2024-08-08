@@ -2,3 +2,4 @@ flask
 gunicorn
 psycopg2-binary
 GeoAlchemy2
+plotly
