@@ -1,14 +1,3 @@
-:root {
-    --md-outlined-button-container-shape: 15px;
-    --md-outlined-button-label-text-font: "Comfortaa", sans-serif;;
-    --md-sys-color-primary: #001f45;
-    --md-sys-color-outline: #e1b800;
-}
-
-md-outlined-button:hover {
-    background-color: rgb(255, 212, 95);
-}
-
 body {
     font-family: "Comfortaa", sans-serif;
 }
@@ -52,33 +41,22 @@ body {
     color: inherit;
 }
 
-/* LANDING PAGE */
+/* PLOT */
 
-.landing-page {
-    margin: 0;
+.plotly {
+    margin: 0px;
+    padding: 0px;
 }
 
-.description {
-    padding-left: 50px;
-}
-
-.landing-page .banner {
-    width: 100%;
-}
-
-.landing-page .banner .col .header-img {
-    width: 100%;
-    text-align: center;
-}
-
-.about {
-    padding-left: 50px;
+.graph {
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 /* Footer */
 
 .footer {
-    margin-top: 80px;
+    margin-top: 50px;
     padding: 80px;
     height: 350px;
     background-color: #ffebcc;
