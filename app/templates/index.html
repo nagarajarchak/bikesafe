@@ -33,9 +33,8 @@
                 </div>
                 <div class="col-3 menu">
                     <nav class="nav">
-                        <a class="nav-link" href="#">Home</a>
-                        <a class="nav-link" href="#">Insights</a>
-                        <a class="nav-link" href="#">Routes</a>
+                        <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                        <a class="nav-link" href="{{ url_for('display_insights') }}">Insights</a>
                     </nav>                      
                 </div>
             </div>
@@ -43,19 +42,52 @@
 
         <div class="container-fluid landing-page">
             <div class="row banner">
+                
+                <div class="col-1"></div>
                 <div class="col">
-                    <img src="{{ url_for('static', filename='images/header.png') }}" alt="header-img" class="header-img">
+                    <img src="{{ url_for('static', filename='images/header.jpg') }}" alt="header-img" class="header-img">
                 </div>
-            </div>
-            <!-- <div class="row description">
-                <div class="col-8">
-                    <span>
-                        At BikeSafe, we act to promote a safe and sustainable way to cycle around the city of Melbourne and in the process 
+                <div class="col about">
+                    
+                    <h2><i>We make your day-to-day <br> bike commute - a safer one!</i></h2>
+                    <br><br>
+                    <h4>What's BikeSafe?</h4>
+                    At BikeSafe, we act to promote a safe and sustainable way to cycle around the city of Melbourne and in the process 
                         we give back to the environment by promoting a sustainable growth and reduced carbon emissions for the city.
-                    </span>
+
+                    <br><br>
+
+                    <h4>What we stand for?</h4>
+                    We believe: <i><u>Safety</u></i> > <i><u>Speed</u></i>.<br><br>
+                    We certainly want you to reach your destination quickly, however we want you to do so <i><u>safely</u></i>.
+
+                    <br><br>
+
+                    <h4>What we offer?</h4>
+                    We leverage the power of data to offer you insights into the number of bike related accidents that have occurred 
+                    across the City of Melbourne! 
+                    <br><br>
+                    We hope to make your day-to-day bike commute a safer one.
+                    <br><br>
+                    <a href="{{ url_for('display_insights') }}"><md-outlined-button>View Insights</md-outlined-button></a>
+
                 </div>
-            </div> -->
+                <div class="col-1"></div>
+
+            </div>
         </div>
         
     </body>
+    
+    <div class="footer">
+
+        <h1><a href="/">BikeSafe</a></h1>
+        <span><i>Don't just bike, BikeSafe</i></span>
+        <br><br>
+        <span>Thank you for visiting our website & we hope you have a safe ride on whatever road you plan to tread.</span>
+        <br><br>
+        <span>Got a query? <br> Ping us at <b>hello@bikesafe.com</b>.</span>
+
+    </div>
+
 </html>
